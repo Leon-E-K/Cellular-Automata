@@ -1,0 +1,3 @@
+Only execute each test individually, do not try all of them at once: due to the singleton pattern used,
+there will only be one rule object, with only one defined set of rules, when invoking multiple tests at once,
+the later ones will try to override the already existing object, which the singleton pattern does not allow.
